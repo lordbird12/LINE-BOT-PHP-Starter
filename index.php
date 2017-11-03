@@ -56,7 +56,7 @@ if (!is_null($events['events'])) {
 			}else if($text == 'imagemap'){
 				$messages = [
 					  'type' => 'imagemap',
-					  'baseUrl' => 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Rabbit_in_montana.jpg',
+					  'baseUrl' => 'https://dptf.com/',
 					  'altText' => 'this is an imagemap',
 					  'baseSize' => [
 						'height' => 1040,
