@@ -28,27 +28,20 @@ if (!is_null($events['events'])) {
 			
 			$messages = [
 				  "type": "template",
-				  "altText": "this is a buttons template",
+				  "altText": "this is a confirm template",
 				  "template": {
-				      "type": "buttons",
-				      "thumbnailImageUrl": "https://travel.mthai.com/app/uploads/2016/03/songkran_mthai_04_600x315px.jpg",
-				      "title": "Menu",
-				      "text": "Please select",
+				      "type": "confirm",
+				      "text": "Are you sure?",
 				      "actions": [
 					  {
-					    "type": "postback",
-					    "label": "Buy",
-					    "data": "action=buy&itemid=123"
+					    "type": "message",
+					    "label": "Yes",
+					    "text": "yes"
 					  },
 					  {
-					    "type": "postback",
-					    "label": "Add to cart",
-					    "data": "action=add&itemid=123"
-					  },
-					  {
-					    "type": "uri",
-					    "label": "View detail",
-					    "uri": "http://example.com/page/123"
+					    "type": "message",
+					    "label": "No",
+					    "text": "no"
 					  }
 				      ]
 				  }
