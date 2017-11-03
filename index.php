@@ -20,8 +20,8 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				'type' => 'sticker',
-				//'text' => 'มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ',
+				'type' => 'text',
+				'text' => 'มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ',
 				'packageId' => '4',
 				'stickerId' => '300'
 			];
