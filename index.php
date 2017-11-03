@@ -63,7 +63,7 @@ if (!is_null($events['events'])) {
       						'width' => 1040  
 				          ],
 					  'actions' => [
-					      [
+						{
 						  'type' => 'uri',
 						  'linkUri' => 'https://dptf.com/',
 						  'area' => [
@@ -72,8 +72,8 @@ if (!is_null($events['events'])) {
 						      'width' => 520,
 						      'height' => 1040
 						  ]
-					      ],
-					      [
+					      },
+				              {
 						  'type '=> 'message',
 						  'text' => 'hello',
 						  'area' => [
@@ -82,8 +82,8 @@ if (!is_null($events['events'])) {
 						      'width' => 520,
 						      'height' => 1040
 						  ]
-					      ]
-                                           ]
+					      }
+                                         ]
 				];
 			}
 			
