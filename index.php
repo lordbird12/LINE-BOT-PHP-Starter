@@ -56,34 +56,34 @@ if (!is_null($events['events'])) {
 			}else if($text == 'imagemap'){
 				$messages = [
 					  'type' => 'imagemap',
-					  'baseUrl' => 'https://dptf.com/',
+					  'baseUrl' => 'https://www.google.co.th',
 					  'altText' => 'this is an imagemap',
 					  'baseSize' => [
 						'height' => 1040,
       						'width' => 1040  
 				          ],
 					  'actions' => [
-						[
-						  'type' => 'uri',
-						  'linkUri' => 'https://dptf.com/',
-						  'area' => [
-						      'x' => 0,
-						      'y' => 0,
-						      'width' => 520,
-						      'height' => 1040
-						  ]
-					      ],
-				              [
-						  'type '=> 'message',
-						  'text' => 'hello',
-						  'area' => [
-						      'x' => 520,
-						      'y' => 0,
-						      'width' => 520,
-						      'height' => 1040
-						  ]
-					      ]
-                                         ]
+					    {
+					      'type'=> 'uri',
+					      'linkUri'=> 'https://www.google.co.th',
+					      'area'=> {
+						'x'=> 0,
+						'y'=> 0,
+						'width'=> 520,
+						'height'=> 1040,
+					      }
+					    },
+					    {
+					      'type'=> 'message',
+					      'text'=> 'hello',
+					      'area'=> {
+						'x'=> 520,
+						'y'=> 0,
+						'width'=> 520,
+						'height'=> 1040,
+					      }
+					    }
+					]
 				];
 			}
 			
