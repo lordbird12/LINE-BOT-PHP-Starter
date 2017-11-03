@@ -36,8 +36,8 @@ if (!is_null($events['events'])) {
 			/*image*/
 			$messages = [
 				  'type' => 'image',
-				  'originalContentUrl' => 'http://www.ponglocal.go.th/@/images/photo/logo-songkran.png',
-				  'previewImageUrl' => 'http://www.ponglocal.go.th/@/images/photo/logo-songkran.png'
+				  'originalContentUrl' => 'https://loveandlightportal.files.wordpress.com/2012/06/buddha-under-bodhi.jpg',
+				  'previewImageUrl' => 'https://loveandlightportal.files.wordpress.com/2012/06/buddha-under-bodhi.jpg'
 			];
 			
 
