@@ -59,31 +59,32 @@ if (!is_null($events['events'])) {
 					  'baseUrl' => 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Rabbit_in_montana.jpg',
 					  'altText' => 'this is an imagemap',
 					  'baseSize' => [
-						"height": 1040,
-      						"width": 1040  
+						'height' => 1040,
+      						'width' => 1040  
 				          ],
-					  "actions"=> [
-					      {
-						  "type"=> "uri",
-						  "linkUri"=> "https://dptf.com/",
-						  "area"=> {
-						      "x"=> 0,
-						      "y"=> 0,
-						      "width"=> 520,
-						      "height"=> 1040
-						  }
-					      },
-					      {
-						  "type"=> "message",
-						  "text"=> "hello",
-						  "area"=> {
-						      "x"=> 520,
-						      "y"=> 0,
-						      "width"=> 520,
-						      "height"=> 1040
-						  }
-					      }
-				];	
+					  'actions' => [
+					      [
+						  'type' => 'uri',
+						  'linkUri' => 'https://dptf.com/',
+						  'area' => [
+						      'x' => 0,
+						      'y' => 0,
+						      'width' => 520,
+						      'height' => 1040
+						  ]
+					      ],
+					      [
+						  'type '=> 'message',
+						  'text' => 'hello',
+						  'area' => [
+						      'x' => 520,
+						      'y' => 0,
+						      'width' => 520,
+						      'height' => 1040
+						  ]
+					      ]
+                                           ]
+				];
 			}
 			
 			
