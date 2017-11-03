@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				  'type' => 'image',
 				  'originalContentUrl' => 'http://www.ponglocal.go.th/@/images/photo/logo-songkran.png',
-				  'previewImageUrl' => 'previewImageUrl'
+				  'previewImageUrl' => 'http://www.ponglocal.go.th/@/images/photo/logo-songkran.png'
 			];
 			
 
