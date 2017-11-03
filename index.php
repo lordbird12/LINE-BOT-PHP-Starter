@@ -16,18 +16,30 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
+			
+			
+			/*text
 			$messages = [
 				'type' => 'text',
-				'text' => 'มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ',
-				'packageId' => '4',
-				'stickerId' => '300'
+				'text' => 'มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ'
+			];
+			*/
+			
+			/*sticker
+			$messages = [
+				  'type' => 'sticker',
+				  'packageId' => '1',
+				  'stickerId' => '1'
+			];
+			*/
+			
+			/*image*/
+			$messages = [
+				  'type' => 'image',
+				  'originalContentUrl' => 'http://www.ponglocal.go.th/@/images/photo/logo-songkran.png',
+				  'previewImageUrl' => 'previewImageUrl'
 			];
 			
-// 			$messages = [
-// 				  'type' => 'sticker',
-// 				  'packageId' => '1',
-// 				  'stickerId' => '1'
-// 				];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
