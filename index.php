@@ -17,28 +17,25 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			
+			if($text == 'text'){
+				$messages = [
+					'type' => 'text',
+					'text' => 'มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ'
+				];
+			}else if($text == 'sticker'){
+				$messages = [
+					  'type' => 'sticker',
+					  'packageId' => '1',
+					  'stickerId' => '1'
+				];
+			}else if($text == 'sticker'){
+				$messages = [
+					  'type' => 'image',
+					  'originalContentUrl' => 'https://loveandlightportal.files.wordpress.com/2012/06/buddha-under-bodhi.jpg',
+					  'previewImageUrl' => 'https://loveandlightportal.files.wordpress.com/2012/06/buddha-under-bodhi.jpg'
+				];	
+			}
 			
-			/*text
-			$messages = [
-				'type' => 'text',
-				'text' => 'มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ'
-			];
-			*/
-			
-			/*sticker
-			$messages = [
-				  'type' => 'sticker',
-				  'packageId' => '1',
-				  'stickerId' => '1'
-			];
-			*/
-			
-			/*image*/
-			$messages = [
-				  'type' => 'image',
-				  'originalContentUrl' => 'https://loveandlightportal.files.wordpress.com/2012/06/buddha-under-bodhi.jpg',
-				  'previewImageUrl' => 'https://loveandlightportal.files.wordpress.com/2012/06/buddha-under-bodhi.jpg'
-			];
 			
 
 			// Make a POST Request to Messaging API to reply to sender
