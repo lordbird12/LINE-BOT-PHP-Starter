@@ -26,12 +26,12 @@ if (!is_null($events['events'])) {
 // 				'stickerId' => '300'
 // 			];
 			
-			$messages = {
+			$messages = [
 				  "type": "template",
 				  "altText": "this is a buttons template",
 				  "template": {
 				      "type": "buttons",
-				      "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
+				      "thumbnailImageUrl": "https://travel.mthai.com/app/uploads/2016/03/songkran_mthai_04_600x315px.jpg",
 				      "title": "Menu",
 				      "text": "Please select",
 				      "actions": [
@@ -52,7 +52,7 @@ if (!is_null($events['events'])) {
 					  }
 				      ]
 				  }
-				};
+				];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
