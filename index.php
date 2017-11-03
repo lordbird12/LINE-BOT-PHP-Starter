@@ -27,24 +27,9 @@ if (!is_null($events['events'])) {
 // 			];
 			
 			$messages = [
-				  "type": "template",
-				  "altText": "this is a confirm template",
-				  "template": {
-				      "type": "confirm",
-				      "text": "Are you sure?",
-				      "actions": [
-					  {
-					    "type": "message",
-					    "label": "Yes",
-					    "text": "yes"
-					  },
-					  {
-					    "type": "message",
-					    "label": "No",
-					    "text": "no"
-					  }
-				      ]
-				  }
+				  "type": "sticker",
+				  "packageId": "1",
+				  "stickerId": "1"
 				];
 
 			// Make a POST Request to Messaging API to reply to sender
