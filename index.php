@@ -28,11 +28,30 @@ if (!is_null($events['events'])) {
 					  'packageId' => '1',
 					  'stickerId' => '1'
 				];
-			}else if($text == 'sticker'){
+			}else if($text == 'image'){
 				$messages = [
 					  'type' => 'image',
 					  'originalContentUrl' => 'https://loveandlightportal.files.wordpress.com/2012/06/buddha-under-bodhi.jpg',
 					  'previewImageUrl' => 'https://loveandlightportal.files.wordpress.com/2012/06/buddha-under-bodhi.jpg'
+				];	
+			}else if($text == 'video'){
+				$messages = [
+					  'type' => 'video',
+					  'originalContentUrl' => 'https://www.w3schools.com/html/mov_bbb.mp4',
+					  'previewImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Rabbit_in_montana.jpg'
+				];	
+			}else if($text == 'audio'){
+				$messages = [
+					  'type' => 'text',
+					  'text' => 'หาไฟล์ไม่ได้'
+				];	
+			}else if($text == 'location'){
+				$messages = [
+					  'type' => 'location',
+					  'title' => 'บ้านเราเอง',
+					  'address' => 'หมู่บ้าน วัฒนา 69/83 หมู่ 4 ลำต้อยติ่ง หนองจอก กทม 10530',
+					  'latitude' => '13.788683',
+					  'longitude' => '100.866348'
 				];	
 			}
 			
