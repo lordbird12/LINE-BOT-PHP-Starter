@@ -14,14 +14,45 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
+			
+			$img_url = "https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363";
+			$outputText = new LINE\LINEBot\MessageBuilder\ImageMessageBuilder($img_url, $img_url);
 
 			// Build message to reply back
-			$messages = [
-				'type' => 'text',
-				'text' => 'มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ',
-				'packageId' => '4',
-				'stickerId' => '300'
-			];
+// 			$messages = [
+// 				'type' => 'text',
+// 				'text' => 'มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ',
+// 				'packageId' => '4',
+// 				'stickerId' => '300'
+// 			];
+			
+			$messages = {
+				  "type": "template",
+				  "altText": "this is a buttons template",
+				  "template": {
+				      "type": "buttons",
+				      "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
+				      "title": "Menu",
+				      "text": "Please select",
+				      "actions": [
+					  {
+					    "type": "postback",
+					    "label": "Buy",
+					    "data": "action=buy&itemid=123"
+					  },
+					  {
+					    "type": "postback",
+					    "label": "Add to cart",
+					    "data": "action=add&itemid=123"
+					  },
+					  {
+					    "type": "uri",
+					    "label": "View detail",
+					    "uri": "http://example.com/page/123"
+					  }
+				      ]
+				  }
+				};
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
