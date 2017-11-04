@@ -57,7 +57,7 @@ if (!is_null($events['events'])) {
 				$messages = [
 					  'type' => 'imagemap',
 					  'baseUrl' => 'https://www.google.co.th',
-					  'altText' => 'this is an imagemap',
+					  'altText' => 'this is an imagemap'
 				];
 			}
 			
