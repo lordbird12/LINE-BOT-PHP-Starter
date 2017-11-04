@@ -58,10 +58,6 @@ if (!is_null($events['events'])) {
 					  'type' => 'imagemap',
 					  'baseUrl' => 'https://www.google.co.th',
 					  'altText' => 'this is an imagemap',
-					  'baseSize' => [
-						'height' => 1040,
-      						'width' => 1040  
-				          ]
 				];
 			}
 			
