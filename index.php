@@ -22,10 +22,12 @@ if (!is_null($events['events'])) {
 // 					'type' => 'text',
 // 					'text' => 'มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ'
 // 				];
-				$messages = {
+				$data = '{
 					"type": "text",
 					"text": "มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ"
-				};
+				}';
+
+				$messages = json_decode($data);
 			}
 // 			}else if($text == 'sticker'){
 // 				$messages = [
