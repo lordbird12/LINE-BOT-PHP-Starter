@@ -60,31 +60,35 @@ if (!is_null($events['events'])) {
 // 				];	
 			}else if($text == 'imagemap'){
 				$messages = '{
-					  "type": "template",
-					  "altText": "this is a buttons template",
-					  "template": {
-					      "type": "buttons",
-					      "thumbnailImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Rabbit_in_montana.jpg",
-					      "title": "Menu",
-					      "text": "Please select",
-					      "actions": [
-						  {
-						    "type": "postback",
-						    "label": "Buy",
-						    "data": "action=buy&itemid=123"
-						  },
-						  {
-						    "type": "postback",
-						    "label": "Add to cart",
-						    "data": "action=add&itemid=123"
-						  },
-						  {
-						    "type": "uri",
-						    "label": "View detail",
-						    "uri": "http://example.com/page/123"
+					  "type": "imagemap",
+					  "baseUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Rabbit_in_montana.jpg",
+					  "altText": "this is an imagemap",
+					  "baseSize": {
+					      "height": 1040,
+					      "width": 1040
+					  },
+					  "actions": [
+					      {
+						  "type": "uri",
+						  "linkUri": "https://example.com/",
+						  "area": {
+						      "x": 0,
+						      "y": 0,
+						      "width": 520,
+						      "height": 1040
 						  }
-					      ]
-					  }
+					      },
+					      {
+						  "type": "message",
+						  "text": "hello",
+						  "area": {
+						      "x": 520,
+						      "y": 0,
+						      "width": 520,
+						      "height": 1040
+						  }
+					      }
+					  ]
 					}';
 			}
 			
