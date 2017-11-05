@@ -60,36 +60,40 @@ if (!is_null($events['events'])) {
 // 				];	
 			}else if($text == 'imagemap'){
 				$data = '{
-					  "type": "imagemap",
-					  "baseUrl": "https://example.com/bot/images/rm001",
-					  "altText": "this is an imagemap",
-					  "baseSize": {
-					      "height": 1040,
-					      "width": 1040
-					  },
-					  "actions": [
-					      {
-						  "type": "uri",
-						  "linkUri": "https://example.com/400",
-						  "area": {
-						      "x": 0,
-						      "y": 0,
-						      "width": 520,
-						      "height": 1040
-						  }
-					      },
-					      {
-						  "type": "message",
-						  "text": "hello",
-						  "area": {
-						      "x": 520,
-						      "y": 0,
-						      "width": 520,
-						      "height": 1040
-						  }
-					      }
-					  ]
-					}';
+					"type": "text",
+					"text": "dsfadfdsfdsfdsfsfsfs"
+				}';
+// 				$data = '{
+// 					  "type": "imagemap",
+// 					  "baseUrl": "https://example.com/bot/images/rm001",
+// 					  "altText": "this is an imagemap",
+// 					  "baseSize": {
+// 					      "height": 1040,
+// 					      "width": 1040
+// 					  },
+// 					  "actions": [
+// 					      {
+// 						  "type": "uri",
+// 						  "linkUri": "https://example.com/400",
+// 						  "area": {
+// 						      "x": 0,
+// 						      "y": 0,
+// 						      "width": 520,
+// 						      "height": 1040
+// 						  }
+// 					      },
+// 					      {
+// 						  "type": "message",
+// 						  "text": "hello",
+// 						  "area": {
+// 						      "x": 520,
+// 						      "y": 0,
+// 						      "width": 520,
+// 						      "height": 1040
+// 						  }
+// 					      }
+// 					  ]
+// 					}';
 			}
 			
 			$messages = json_decode($data);
