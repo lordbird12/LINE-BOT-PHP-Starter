@@ -26,9 +26,7 @@ if (!is_null($events['events'])) {
 					"type": "text",
 					"text": "มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ"
 				}';
-
-				$messages = json_decode($data);
-			}
+			
 // 			}else if($text == 'sticker'){
 // 				$messages = [
 // 					  'type' => 'sticker',
@@ -60,15 +58,37 @@ if (!is_null($events['events'])) {
 // 					  'latitude' => '13.788683',
 // 					  'longitude' => '100.866348'
 // 				];	
-// 			}else if($text == 'imagemap'){
-// 				$messages = [
-// 					  'type' => 'imagemap',
-// 					  'baseUrl' => 'https://www.google.co.th',
-// 					  'altText' => 'this is an imagemap'
-// 				];
-// 			}
+			}else if($text == 'imagemap'){
+				$messages = '{
+					  "type": "template",
+					  "altText": "this is a buttons template",
+					  "template": {
+					      "type": "buttons",
+					      "thumbnailImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Rabbit_in_montana.jpg",
+					      "title": "Menu",
+					      "text": "Please select",
+					      "actions": [
+						  {
+						    "type": "postback",
+						    "label": "Buy",
+						    "data": "action=buy&itemid=123"
+						  },
+						  {
+						    "type": "postback",
+						    "label": "Add to cart",
+						    "data": "action=add&itemid=123"
+						  },
+						  {
+						    "type": "uri",
+						    "label": "View detail",
+						    "uri": "http://example.com/page/123"
+						  }
+					      ]
+					  }
+					}';
+			}
 			
-			
+			$messages = json_decode($data);
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
