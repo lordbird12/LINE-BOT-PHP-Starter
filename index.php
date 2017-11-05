@@ -59,7 +59,7 @@ if (!is_null($events['events'])) {
 // 					  'longitude' => '100.866348'
 // 				];	
 			}else if($text == 'imagemap'){
-				$messages = '{
+				$data = '{
 					  "type": "imagemap",
 					  "baseUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Rabbit_in_montana.jpg",
 					  "altText": "this is an imagemap",
