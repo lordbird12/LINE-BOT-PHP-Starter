@@ -61,7 +61,7 @@ if (!is_null($events['events'])) {
 			}else if($text == 'imagemap'){
 				$data = '{
 					  "type": "imagemap",
-					  "baseUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Rabbit_in_montana.jpg",
+					  "baseUrl": "https://www.dptf.co.th/appse/img/",
 					  "altText": "this is an imagemap",
 					  "baseSize": {
 					      "height": 1040,
