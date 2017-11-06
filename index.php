@@ -13,8 +13,9 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Get replyToken
-			$replyToken = $event['replyToken'];
-			file_put_contents('filename.txt', print_r($event['type'], true));
+			//$replyToken = $event['replyToken'];
+			$replyToken = 'NRdywYUGZqe1AwKGPqtuCvMxddlRioTecsnrw8Th4dj';
+			//file_put_contents('filename.txt', print_r($event['type'], true));
 			// Build message to reply back
 			
 			if($text == 'text'){
