@@ -89,7 +89,7 @@ if (!is_null($events['events'])) {
 			}else if($text == 'token'){
 				$data = '{
 					  "type": "text",
-					  "text": $replyToken
+					  "text": implode(" ",$replyToken)
 				}';	
 			}
 			
