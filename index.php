@@ -14,6 +14,11 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
+			
+			$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+			$txt = $replyToken;
+			fwrite($myfile, $txt);
+			fclose($myfile);
 			//$replyToken = 'NRdywYUGZqe1AwKGPqtuCvMxddlRioTecsnrw8Th4dj';
 		
 			// Build message to reply back
@@ -95,7 +100,6 @@ if (!is_null($events['events'])) {
 			}
 			
 			$messages = json_decode($data);
-			//file_put_contents('filename.txt', $replyToken, true));
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
