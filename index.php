@@ -14,7 +14,7 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-			file_put_contents('array.txt', var_export($events['events'], TRUE));
+			file_put_contents('filename.txt', print_r($event['type'], true));
 			// Build message to reply back
 			
 			if($text == 'text'){
