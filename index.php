@@ -57,7 +57,7 @@ if (!is_null($events['events'])) {
 			}else if($text == 'imagemap'){
 				$data = '{
 					  "type": "imagemap",
-					  "baseUrl": "https://example.com/bot/images/rm001",
+					  "baseUrl": "http://dptf.herokuapp.com/300/",
 					  "altText": "this is an imagemap",
 					  "baseSize": {
 					      "height": 1040,
@@ -86,6 +86,11 @@ if (!is_null($events['events'])) {
 					      }
 					  ]
 					}';
+			}else if($text == 'token'){
+				$data = '{
+					  "type": "text",
+					  "text": $replyToken
+				}';	
 			}
 			
 			$messages = json_decode($data);
