@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 			if($text == 'text'){
 				$data = '{
 					"type": "text",
-					"text": "มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ".$replyToken
+					"text": "มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ"
 				}';
 			
 			}else if($text == 'sticker'){
@@ -92,11 +92,6 @@ if (!is_null($events['events'])) {
 					      }
 					  ]
 					}';
-			}else if($text == 'token'){
-				$data = '{
-					  "type": "text",
-					  "text": implode(" ",$replyToken)
-				}';	
 			}
 			
 			$messages = json_decode($data);
