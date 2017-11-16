@@ -63,7 +63,7 @@ if (!is_null($events['events'])) {
 			}else if($text == 'imagemap'){
 				$data = '{
 					  "type": "imagemap",
-					  "baseUrl": "http://dptf.herokuapp.com/300/",
+					  "baseUrl": "http://dptf.herokuapp.com/300/Deep_Purple_(album).jpeg",
 					  "altText": "this is an imagemap",
 					  "baseSize": {
 					      "height": 1040,
@@ -72,7 +72,7 @@ if (!is_null($events['events'])) {
 					  "actions": [
 					      {
 						  "type": "uri",
-						  "linkUri": "https://example.com/400",
+						  "linkUri": "http://dptf.herokuapp.com/300/Deep_Purple_(album).jpeg",
 						  "area": {
 						      "x": 0,
 						      "y": 0,
