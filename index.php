@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
 					  "type": "text",
 					  "text": "หาไฟล์ไม่ได้"
 				}';	
-			}else if($text == 'location'){
+			}else if($text == 'บ้าน'){
 				$data = '{
 					  "type": "location",
 					  "title": "บ้านเราเอง",
@@ -84,6 +84,12 @@ if (!is_null($events['events'])) {
 					      }
 					  ]
 					}';
+			}else{
+				$data = '{
+					  "type": "sticker",
+					  "packageId": "16",
+					  "stickerId": "16"
+				}';
 			}
 			
 			$messages = json_decode($data);
