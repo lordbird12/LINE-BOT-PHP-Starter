@@ -15,18 +15,10 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			
-// 			$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-// 			$txt = $replyToken;
-// 			fwrite($myfile, $txt);
-// 			fclose($myfile);
-			//$replyToken = 'NRdywYUGZqe1AwKGPqtuCvMxddlRioTecsnrw8Th4dj';
-		
-			// Build message to reply back
-			
-			if($text == 'text'){
+			if($text == 'ดีเพื่อน'){
 				$data = '{
 					"type": "text",
-					"text": "มีไรทักทำไม มีไรทักทำไมหุบปากเดียวนี้ลำคาญ"
+					"text": "ดี นายเป็นไงบ้าง เราอยู่ข้างนายนะ สู้ๆ"
 				}';
 			
 			}else if($text == 'sticker'){
